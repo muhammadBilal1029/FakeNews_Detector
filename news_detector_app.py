@@ -3,13 +3,9 @@ import pickle
 import eli5
 from eli5.sklearn import explain_prediction_sklearn
 
-# Load model and vectorizer
-model_path = 'D:/ML_Projects/FakeNews_Detector/model.pkl'
-vec_path = 'D:/ML_Projects/FakeNews_Detector/vectorizer.pkl'
-
-with open(model_path, 'rb') as f:
+with open("D:/ML_Projects/FakeNews_Detector/model.pkl", 'rb') as f:
     model = pickle.load(f)
-with open(vec_path, 'rb') as f:
+with open('D:/ML_Projects/FakeNews_Detector/vectorizer.pkl', 'rb') as f:
     vectorizer = pickle.load(f)
 
 st.title("Fake News Detector with Explanation")
